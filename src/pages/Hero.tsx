@@ -7,43 +7,48 @@ import { cn } from "@/utils/cn";
 export function Hero() {
   return (
     <section id="home">
-      <div className="h-[40rem] w-full rounded-md flex md:items-center md:justify-center  antialiased relative overflow-hidden">
-        <Spotlight
-          className="sm:-top-1 left-0 md:left-60 md:-top-20"
-          fill="white"
-        />
+
+      <div className="w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex flex-col items-center justify-center">
+        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-zinc-900 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+        <div className="h-[40rem] w-full rounded-md flex md:items-center md:justify-center  antialiased relative overflow-hidden">
+          <Spotlight
+            className="sm:-top-1 left-0 md:left-60 md:-top-20"
+            fill="white"
+          />
+          <motion.div
+            initial={{ opacity: 0.0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.3,
+              duration: 0.8,
+              ease: "easeInOut",
+            }}
+            className="relative flex flex-col gap-4 items-center justify-center px-4">
+            <div className=" p-4 max-w-8xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
+              <h1 className="mt-10 text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+                Spotlight <br /> Shines When a Person's
+              </h1>
+              <h1 className="mt-2 font-extralight text-2xl md:text-5xl max-w-lg text-center mx-auto bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+                Skills are Showcased.
+              </h1>
+            </div>
+          </motion.div>
+        </div>
+
         <motion.div
           initial={{ opacity: 0.0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
             delay: 0.3,
-            duration: 0.8,
+            duration: 10,
             ease: "easeInOut",
           }}
-          className="relative flex flex-col gap-4 items-center justify-center px-4">
-          <div className=" p-4 max-w-8xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
-            <h1 className="mt-10 text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-              Spotlight <br /> Shines When a Person's
-            </h1>
-            <h1 className="mt-2 font-extralight text-2xl md:text-5xl max-w-lg text-center mx-auto bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-              Skills are Showcased.
-            </h1>
+          className="relative flex flex-col gap-0 px-0 items-center justify-center">
+          <div className="flex items-center justify-center bottom-20 left-0 right-0">
+            <IconArrowNarrowDown className="animate-bounce h-10 w-10 text-neutral-500 dark:text-white hover:text-blue-500 opacity-50" />
           </div>
         </motion.div>
       </div>
-      <motion.div
-        initial={{ opacity: 0.0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.3,
-          duration: 10,
-          ease: "easeInOut",
-        }}
-        className="relative flex flex-col gap-4 items-center justify-center px-4">
-        <div className="flex items-center justify-center bottom-20 left-0 right-0">
-          <IconArrowNarrowDown className="animate-bounce h-10 w-10 text-neutral-500 dark:text-white hover:text-blue-500 opacity-50" />
-        </div>
-      </motion.div>
     </section>
   );
 }

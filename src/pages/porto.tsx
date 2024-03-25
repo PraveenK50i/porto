@@ -5,6 +5,9 @@ import { motion } from "framer-motion";
 export function Porto() {
   return (
     <section id="Portfolio">
+      <div className="h-[50rem] w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center">
+      {/* Radial gradient for the container to give a faded look */}
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-zinc-900 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
     <motion.div
         initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -21,8 +24,9 @@ export function Porto() {
             <h1 className="mt-2 font-extralight text-2xl md:text-5xl max-w-lg text-center mx-auto bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
               Skills are Showcased.
             </h1>
-          </div>
+          </div>  
       </motion.div>
+      </div>
       </section>
   )
 }
