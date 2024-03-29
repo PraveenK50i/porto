@@ -2,7 +2,6 @@
 import * as React from "react";
 import { cn } from "@/utils/cn";
 import { useMotionTemplate, useMotionValue, motion } from "framer-motion";
-import { Textarea } from "@/components/ui/textarea"
 import * as LabelPrimitive from "@radix-ui/react-label";
 import {
   IconBrandGithub,
@@ -10,7 +9,7 @@ import {
   IconBrandMedium,
 } from "@tabler/icons-react";
 
-export function homepage() {
+export default function homepage() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form submitted");
@@ -188,12 +187,11 @@ Label.displayName = LabelPrimitive.Root.displayName;
 export { Label };
 
 
- 
+
 export function TextareaWithText() {
   return (
     <div className="grid w-full gap-1.5">
       <Label htmlFor="message-2">Your Message</Label>
-      <Textarea placeholder="Type your message here." id="message-2" />
       <p className="text-sm text-muted-foreground">
         Your message will be copied to the support team.
       </p>

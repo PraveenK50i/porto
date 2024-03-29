@@ -6,7 +6,7 @@ import { cn } from "@/utils/cn";
 
 export function Hero() {
   return (
-    <section id="home">
+    <div>
         <div className="h-[40rem] w-full rounded-md flex md:items-center md:justify-center  antialiased relative overflow-hidden">
           <Spotlight
             className="sm:-top-1 left-0 md:left-60 md:-top-20"
@@ -45,7 +45,8 @@ export function Hero() {
             <IconArrowNarrowDown className="animate-bounce h-10 w-10 text-neutral-500 dark:text-white hover:text-blue-500 opacity-50" />
           </div>
         </motion.div>
-    </section>
+        </div>
+
   );
 }
 
@@ -102,4 +103,5 @@ export const Spotlight = ({ className, fill }: SpotlightProps) => {
     </svg>
   );
 };
+
 

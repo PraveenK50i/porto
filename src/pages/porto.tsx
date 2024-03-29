@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 
 export function Porto() {
   return (
-    <section id="Work">
+    <div>
+
       <motion.div
         initial={{ opacity: 0.0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -26,76 +27,251 @@ export function Porto() {
             <p>Alright, so I'm definitely not Coding prodigy but Im good with Tech stuff. My projects? Well, let's just say they're more like little experiments to Me. And One thing I've been Re-design from some YouTubers'. They're pretty basic, nothing too flashy, but hey, I'm learning as I go!</p>
           </blockquote>
         </div>
- </motion.div>
-        {/* Projects */}
-        <div className='p-5 pt-10 pb-10 text-left text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl justify-center'>
-          <h1 className='font-semibold text-white'>Recent Work:</h1>
-        </div>
-        {/* cards */}
-        <div>
-          <a href="#" className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-            <img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="https://i.postimg.cc/c4rrfshS/android-chrome-192x192.png" alt="pic"></img>
-              <div className="flex flex-col justify-between p-4 leading-normal">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  Noteworthy technology acquisitions 2021</h5>
-                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-              </div>
-          </a>
+      </motion.div>
 
-        <div className='flex flex-col items-center  bg-black border border-white rounded-lg hover:bg-gray-400 md:flex-row md:max-w-xl'>
-          <div>
-          <img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="https://i.postimg.cc/c4rrfshS/android-chrome-192x192.png" alt="pic"></img>
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  Noteworthy technology acquisitions 2021</h5>
-                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-          </div>
-        </div>
+      {/* Projects */}
 
+      <div className='pt-20 px-10 text-left text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl justify-center'>
+        <h1 className='font-semibold text-white'>Recent Work:</h1>
+      </div>
 
+      {/* cards */}
 
+      <ul className="flex flex-col xl:flex-col gap-y-10 gap-x-6 items-start p-8">
+        <motion.div
+          initial={{ opacity: 0.0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.3,
+            duration: 0.8,
+            ease: "easeInOut",
+          }}>
+          <li className="relative flex flex-col sm:flex-row  items-start">
+            <div className="order-1 sm:ml-6 ">
+              <h3 className="mb-1 text-slate-900 font-bold dark:text-slate-200">
+                <span className="mb-1 block text-2xl md:text-4xl font-sans leading-6 text-amber-300">Flutter App</span>
+                <span className="mr-2">Andriod</span>
+                <span className="mr-2">·</span>
+                <span className="mr-2">Ios</span>
+                <span className="mr-2">·</span>
+                <span className="mr-2">Firebase</span>
+              </h3>
+              <div className="text-slate-600 dark:text-slate-400">
+                <p>I have been working to build an app using Flutter. This app facilitates a single gym membership purchase, allowing us to utilize every gym associated with the app's policy.</p>
+              </div><a
+                className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-6"
+                href="https://landingpage-r131.vercel.app/"
+                target="_blank" // Add this attribute
+                rel="noopener noreferrer">View Work<svg
+                  className="overflow-visible ml-3 text-slate-300 group-hover:text-slate-400 dark:text-slate-500 dark:group-hover:text-slate-400"
+                  width="3" height="6" viewBox="0 0 3 6" fill="none" stroke="currentColor" strokeWidth="2"
+                  strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M0 0L3 3L0 6"></path>
+                </svg></a>
+            </div><img src="https://i.postimg.cc/6q1sbRLq/6.jpg" alt="" className="mb-6 shadow-md rounded-xl bg-slate-50 w-full sm:w-[17rem] sm:mb-0 xl:mb-6 xl:w-[20rem] hover:scale-105 transition duration-300 ease-in-out" width="1240" height="640"></img>
+          </li>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0.0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.3,
+            duration: 0.8,
+            ease: "easeInOut",
+          }}>
+          <li className="relative flex flex-col sm:flex-row  items-start">
+            <div className="order-1 sm:ml-6 ">
+              <h3 className="mb-1 text-slate-900 font-bold dark:text-slate-200">
+                <span className="mb-1 block text-2xl md:text-4xl font-sans leading-6 text-indigo-500">Weather.io</span>
+                <span className="mr-2">Ui/Ux</span>
+                <span className="mr-2">·</span>
+                <span className="mr-2">Api</span>
+                <span className="mr-2">·</span>
+                <span className="mr-2">Js</span>
+                <span className="mr-2">·</span>
+                <span>Css</span></h3>
+              <div className="text-slate-600 dark:text-slate-400">
+                <p>Web app utilizing a weather API to fetch and display real-time weather forecasts based on user-inputted locations, offering a 4-day forecast. Additionally, implement location detection functionality for enhanced user convenience and versatility.</p>
+              </div><a
+                className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-6"
+                href="https://weather-io-umber.vercel.app/" target="_blank" // Add this attribute
+                rel="noopener noreferrer">View Work<span className="sr-only">, Completely unstyled, fully accessible UI components</span><svg
+                  className="overflow-visible ml-3 text-slate-300 group-hover:text-slate-400 dark:text-slate-500 dark:group-hover:text-slate-400"
+                  width="3" height="6" viewBox="0 0 3 6" fill="none" stroke="currentColor" strokeWidth="2"
+                  strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M0 0L3 3L0 6"></path>
+                </svg></a>
+            </div><img src="https://i.postimg.cc/zG1t0mZn/2.jpg" alt="" className="mb-6 shadow-md rounded-xl bg-slate-50 w-full sm:w-[17rem] sm:mb-0 xl:mb-6 xl:w-[20rem] hover:scale-105 transition duration-300 ease-in-out" width="1240" height="640"></img>
+          </li>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0.0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.3,
+            duration: 0.8,
+            ease: "easeInOut",
+          }}>
+          <li className="relative flex flex-col sm:flex-row  items-start">
+            <div className="order-1 sm:ml-6 ">
+              <h3 className="mb-1 text-slate-900 font-bold dark:text-slate-200">
+                <span className="mb-1 block text-2xl md:text-4xl font-sans leading-6 text-stone-500">PravFolio</span>
+                <span className="mr-2">Next.js</span>
+                <span className="mr-2">·</span>
+                <span className="mr-2">Tailwind Css</span>
+                <span className="mr-2">·</span>
+                <span className="mr-2">Firebase</span>
+                <span className="mr-2">·</span>
+                <span className="mr-2">Web Design</span>
+              </h3>
+              <div className="text-slate-600 dark:text-slate-400">
+                <p>I've crafted this portfolio from past projects, showcasing my potential for rapid growth. Each project reflects my journey of learning, highlighting my ability to adapt and evolve in a short span of time.</p>
+              </div><a
+                className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-6"
+                href="" target="_blank" // Add this attribute
+                rel="noopener noreferrer">View Work<svg
+                  className="overflow-visible ml-3 text-slate-300 group-hover:text-slate-400 dark:text-slate-500 dark:group-hover:text-slate-400"
+                  width="3" height="6" viewBox="0 0 3 6" fill="none" stroke="currentColor" strokeWidth="2"
+                  strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M0 0L3 3L0 6"></path>
+                </svg></a>
+            </div><img src="https://i.postimg.cc/9QZRn3gy/post.jpg" alt="" className="mb-6 shadow-md rounded-xl bg-slate-50 w-full sm:w-[17rem] sm:mb-0 xl:mb-6 xl:w-[20rem] hover:scale-105 transition duration-300 ease-in-out" width="1240" height="640"></img>
+          </li>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0.0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.3,
+            duration: 0.8,
+            ease: "easeInOut",
+          }}>
+          <li className="relative flex flex-col sm:flex-row  items-start">
+            <div className="order-1 sm:ml-6 ">
+              <h3 className="mb-1 text-slate-900 font-bold dark:text-slate-200">
+                <span className="mb-1 block text-2xl md:text-4xl font-sans leading-6 text-orange-500">Yami Zuss</span>
+                <span className="mr-2">Ui/Ux</span>
+                <span className="mr-2">·</span>
+                <span className="mr-2">Responsive</span>
+                <span className="mr-2">·</span>
+                <span className="mr-2">Mockup</span>
+                <span className="mr-2">·</span>
+                <span>Css</span></h3>
+              <div className="text-slate-600 dark:text-slate-400">
+                <p>UI/UX design principles with responsive CSS to create a visually appealing and user-friendly product landing page. Employ Photoshop mockups to prototype and refine design elements, ensuring seamless integration of layout, imagery, and interactive components across various screen sizes and devices.</p>
+              </div><a
+                className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-6"
+                href="https://yammi-zuss.vercel.app/" target="_blank" // Add this attribute
+                rel="noopener noreferrer">View Work<svg
+                  className="overflow-visible ml-3 text-slate-300 group-hover:text-slate-400 dark:text-slate-500 dark:group-hover:text-slate-400"
+                  width="3" height="6" viewBox="0 0 3 6" fill="none" stroke="currentColor" strokeWidth="2"
+                  strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M0 0L3 3L0 6"></path>
+                </svg></a>
+            </div><img src="https://i.postimg.cc/CdpRbxqn/1.jpg" alt="" className="mb-6 shadow-md rounded-xl bg-slate-50 w-full sm:w-[17rem] sm:mb-0 xl:mb-6 xl:w-[20rem] hover:scale-105 transition duration-300 ease-in-out" width="1240" height="640"></img>
+          </li>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0.0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.3,
+            duration: 0.8,
+            ease: "easeInOut",
+          }}>
+          <li className="relative flex flex-col sm:flex-row  items-start">
+            <div className="order-1 sm:ml-6 ">
+              <h3 className="mb-1 text-slate-900 font-bold dark:text-slate-200">
+                <span className="mb-1 block text-2xl md:text-4xl font-sans leading-6 text-pink-500">Lync Short</span>
+                <span className="mr-2">Tracker</span>
+                <span className="mr-2">·</span>
+                <span className="mr-2">Api</span>
+                <span className="mr-2">·</span>
+                <span className="mr-2">Js</span>
+                <span className="mr-2">·</span>
+                <span className="mr-2">Bootstrap</span>
+              </h3>
+              <div className="text-slate-600 dark:text-slate-400">
+                <p>This website link shortening functionality with minimal CSS for streamlined design, alongside a built-in tracker to monitor click counts, enhancing link management and analytics capabilities.</p>
+              </div><a
+                className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-6"
+                href="https://github.com/PraveenK50i/shortner" target="_blank" // Add this attribute
+                rel="noopener noreferrer">View Work<svg
+                  className="overflow-visible ml-3 text-slate-300 group-hover:text-slate-400 dark:text-slate-500 dark:group-hover:text-slate-400"
+                  width="3" height="6" viewBox="0 0 3 6" fill="none" stroke="currentColor" strokeWidth="2"
+                  strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M0 0L3 3L0 6"></path>
+                </svg></a>
+            </div><img src="https://i.postimg.cc/L6PQt979/4.jpg" alt="" className="mb-6 shadow-md rounded-xl bg-slate-50 w-full sm:w-[17rem] sm:mb-0 xl:mb-6 xl:w-[20rem] hover:scale-105 transition duration-300 ease-in-out" width="1240" height="640"></img>
+          </li>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0.0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.3,
+            duration: 0.8,
+            ease: "easeInOut",
+          }}>
+          <li className="relative flex flex-col sm:flex-row  items-start">
+            <div className="order-1 sm:ml-6 ">
+              <h3 className="mb-1 text-slate-900 font-bold dark:text-slate-200">
+                <span className="mb-1 block text-2xl md:text-4xl font-sans leading-6 text-emerald-500">Online-IDE</span>
+                <span className="mr-2">Node.js</span>
+                <span className="mr-2">·</span>
+                <span className="mr-2">Server</span>
+                <span className="mr-2">·</span>
+                <span className="mr-2">Hosting</span>
+                <span className="mr-2">·</span>
+                <span className="mr-2">Css</span>
+              </h3>
+              <div className="text-slate-600 dark:text-slate-400">
+                <p>This website app allows users to Choose from C#, Java, or Python, and enjoy a simple interface for smooth navigation and coding playground for testing </p>
+              </div><a
+                className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-6"
+                href="https://github.com/PraveenK50i/Online-IDE" target="_blank" // Add this attribute
+                rel="noopener noreferrer">View Work<svg
+                  className="overflow-visible ml-3 text-slate-300 group-hover:text-slate-400 dark:text-slate-500 dark:group-hover:text-slate-400"
+                  width="3" height="6" viewBox="0 0 3 6" fill="none" stroke="currentColor" strokeWidth="2"
+                  strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M0 0L3 3L0 6"></path>
+                </svg></a>
+            </div><img src="https://i.postimg.cc/KcRHYrDg/5.jpg" alt="" className="mb-6 shadow-md rounded-xl bg-slate-50 w-full sm:w-[17rem] sm:mb-0 xl:mb-6 xl:w-[20rem] hover:scale-105 transition duration-300 ease-in-out" width="1240" height="640"></img>
+          </li>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0.0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.3,
+            duration: 0.8,
+            ease: "easeInOut",
+          }}>
+          <li className="relative flex flex-col sm:flex-row  items-start">
+            <div className="order-1 sm:ml-6 ">
+              <h3 className="mb-1 text-slate-900 font-bold dark:text-slate-200">
+                <span className="mb-1 block text-2xl md:text-4xl font-sans leading-6 text-purple-400">Calculator</span>
+                <span className="mr-2">Html</span>
+                <span className="mr-2">·</span>
+                <span className="mr-2">Css</span>
+              </h3>
+              <div className="text-slate-600 dark:text-slate-400">
+                <p>It's a very first Web Application created through learning and maybe its looks fancy but its a redesign of YouTuber tutorials </p>
+              </div><a
+                className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-6"
+                href="https://calculator-tau-lac.vercel.app/" target="_blank" // Add this attribute
+                rel="noopener noreferrer">View Work<svg
+                  className="overflow-visible ml-3 text-slate-300 group-hover:text-slate-400 dark:text-slate-500 dark:group-hover:text-slate-400"
+                  width="3" height="6" viewBox="0 0 3 6" fill="none" stroke="currentColor" strokeWidth="2"
+                  strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M0 0L3 3L0 6"></path>
+                </svg></a>
+            </div><img src="https://i.postimg.cc/gcQBLXgt/3.jpg" alt="" className="mb-6 shadow-md rounded-xl bg-slate-50 w-full sm:w-[17rem] sm:mb-0 xl:mb-6 xl:w-[20rem] hover:scale-105 transition duration-300 ease-in-out" width="1240" height="640"></img>
+          </li>
+        </motion.div>
 
-
-
-
-
-
-
-
-
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     
-    </section>
+      </ul>
+    </div>
   )
 }
 

@@ -1,24 +1,27 @@
 import Image from "next/image";
-import { Hero} from "../pages/Hero";
-import { AuroraBackgroundDemo } from "../tsx/aurora";
-import { Form } from "@/connect/form";
+import { Hero } from "../pages/Hero";
 import { ThreeDCard } from "../tsx/card";
 import { Porto } from "@/pages/porto";
-import { Sparkles } from "@/tsx/sparkle";
 import { Dot } from "@/tsx/Dot";
-import { Lad } from "@/tsx/Lad";
+import { Lad } from "@/pages/Contact";
+import ContactPage from "@/pages/Simple";
 export default function Home() {
   return (
-    <main className="h-full w-full dark:bg-black bg-lime-600  dark:bg-dot-white/[0.2] bg-dot-black/[0.2]">
-      <div className="">
+    <main className="h-full w-full dark:bg-black bg-neutral-400  dark:bg-dot-white/[0.2] bg-dot-black/[0.2]">
+      <div id="home">
         <Hero />
       </div>
-      <div className="">
-        <Porto/>
+      <div id="Work">
+        <Porto />
       </div>
-      <Dot/>
+      <div id="about">
+        <Dot />
+      </div>
+      <div id="contact">
+        <Lad />
+      </div>
       <div>
-        <Lad/>
+        <ContactPage/>
       </div>
     </main>
   );
