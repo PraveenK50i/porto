@@ -1,9 +1,9 @@
 import Image from "next/image";
-import { Hero } from "../pages/Hero";
+import { Hero } from "../lib/Hero";
 import { ThreeDCard } from "../tsx/card";
-import { Porto } from "@/pages/porto";
-import { Dot } from "@/pages/About";
-import { Lad } from "@/pages/Contact";
+import { Porto } from "@/lib/porto";
+import { Dot } from "@/lib/About";
+import { Lad } from "@/lib/Contact";
 import ContactPage from "@/pages/Simple";
 export default function Home() {
   return (
