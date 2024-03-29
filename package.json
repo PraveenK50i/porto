@@ -18,6 +18,7 @@
     "@tsparticles/slim": "^3.3.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
+    "firebase": "^10.10.0",
     "framer-motion": "^11.0.20",
     "heroicons": "^2.1.1",
     "lucide-react": "^0.359.0",
