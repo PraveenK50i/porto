@@ -9,11 +9,11 @@ import { Dot } from "@/tsx/Dot";
 import { Lad } from "@/tsx/Lad";
 export default function Home() {
   return (
-    <main className="h-full w-full dark:bg-zinc-900">
-      <div className="flex flex-col gap-0 ">
+    <main className="h-full w-full dark:bg-black bg-lime-600  dark:bg-dot-white/[0.2] bg-dot-black/[0.2]">
+      <div className="">
         <Hero />
       </div>
-      <div className="flex flex-col">
+      <div className="">
         <Porto/>
       </div>
       <Dot/>

@@ -15,6 +15,11 @@ const config = {
 	],
   prefix: "",
   theme: {
+    fontFamily: {
+      'sans': ['ui-sans-serif', 'system-ui', 'Helvetica', 'Arial', 'sans-serif'],
+      'serif': ['ui-serif', 'Georgia'],
+      'mono': ['ui-monospace', 'SFMono-Regular'],
+    },
     container: {
       center: true,
       padding: "2rem",

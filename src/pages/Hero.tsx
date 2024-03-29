@@ -7,9 +7,6 @@ import { cn } from "@/utils/cn";
 export function Hero() {
   return (
     <section id="home">
-
-      <div className="w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex flex-col items-center justify-center">
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-zinc-900 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         <div className="h-[40rem] w-full rounded-md flex md:items-center md:justify-center  antialiased relative overflow-hidden">
           <Spotlight
             className="sm:-top-1 left-0 md:left-60 md:-top-20"
@@ -40,7 +37,7 @@ export function Hero() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
             delay: 0.3,
-            duration: 10,
+            duration: 6,
             ease: "easeInOut",
           }}
           className="relative flex flex-col gap-0 px-0 items-center justify-center">
@@ -48,7 +45,6 @@ export function Hero() {
             <IconArrowNarrowDown className="animate-bounce h-10 w-10 text-neutral-500 dark:text-white hover:text-blue-500 opacity-50" />
           </div>
         </motion.div>
-      </div>
     </section>
   );
 }
