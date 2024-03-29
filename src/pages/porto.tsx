@@ -128,7 +128,7 @@ export function Porto() {
                 <p>I've crafted this portfolio from past projects, showcasing my potential for rapid growth. Each project reflects my journey of learning, highlighting my ability to adapt and evolve in a short span of time.</p>
               </div><a
                 className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-6"
-                href="" target="_blank" // Add this attribute
+                href="https://github.com/PraveenK50i/porto" target="_blank" // Add this attribute
                 rel="noopener noreferrer">View Work<svg
                   className="overflow-visible ml-3 text-slate-300 group-hover:text-slate-400 dark:text-slate-500 dark:group-hover:text-slate-400"
                   width="3" height="6" viewBox="0 0 3 6" fill="none" stroke="currentColor" strokeWidth="2"

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Hero } from "../pages/Hero";
 import { ThreeDCard } from "../tsx/card";
 import { Porto } from "@/pages/porto";
-import { Dot } from "@/tsx/Dot";
+import { Dot } from "@/pages/About";
 import { Lad } from "@/pages/Contact";
 import ContactPage from "@/pages/Simple";
 export default function Home() {
@@ -19,9 +19,6 @@ export default function Home() {
       </div>
       <div id="contact">
         <Lad />
-      </div>
-      <div>
-        <ContactPage/>
       </div>
     </main>
   );
