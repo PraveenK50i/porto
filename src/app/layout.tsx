@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Navbar } from "../navbar/navigation";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={`${inter.className} overflow-y-scroll overflow-x-hidden`}>
         <Navbar />
         {children}
+        <Analytics />
         </body>
     </html>
   );
