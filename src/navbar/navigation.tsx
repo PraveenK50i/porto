@@ -8,23 +8,23 @@ export function Navbar() {
     {
       name: "Home",
       link: "#home",
-      icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white hover:text-blue-400" />,
+      icon: <IconHome className="h-4 w-4 text-white hover:text-blue-400" />,
     },
     {
       name: "Work",
       link: "#Work",
-      icon: <IconBriefcase className="h-4 w-4 text-neutral-500 dark:text-white hover:text-blue-400" />,
+      icon: <IconBriefcase className="h-4 w-4 text-white hover:text-blue-400" />,
     },
     {
       name: "About",
       link: "#about",
-      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white hover:text-blue-400" />,
+      icon: <IconUser className="h-4 w-4 text-white hover:text-blue-400" />,
     },
     {
       name: "Contact",
       link: "#contact",
       icon: (
-        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white hover:text-blue-400" />
+        <IconMessage className="h-4 w-4 text-white hover:text-blue-400" />
       ),
     },
   ];
@@ -49,12 +49,12 @@ export const FloatingNav = ({
   return (
     <nav
       className={cn(
-        "flex max-w-fit fixed top-4 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-full dark:bg-black bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] pr-2 pl-8 py-2  items-center justify-center space-x-10",
+        "flex max-w-fit fixed top-4 inset-x-0 mx-auto border border-white/[0.2] rounded-full bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] pr-2 pl-8 py-2  items-center justify-center space-x-10",
         className
       )}
       style={{
-        backdropFilter: "blur(5px) saturate(100%)",
-        backgroundColor: "rgba(30, 30, 30, 0.3)", // Adjust the alpha value to control transparency
+        backdropFilter: "blur(3px) saturate(100%)",
+        backgroundColor: "rgba(25, 25, 25, 0.3)", // Adjust the alpha value to control transparency
       }}
     >
       {navItems.map((navItem: any, idx: number) => (
@@ -62,7 +62,7 @@ export const FloatingNav = ({
           key={`link=${idx}`}
           href={navItem.link}
           className={cn(
-            "relative dark:text-neutral-50 items-center flex font-body:Montserrat text-neutral-400 dark:hover:text-blue-400 hover:text-blue-400"
+            "relative text-neutral-50 items-center flex font-body:Montserrat hover:text-blue-400"
           )}
         >
           <span className="block sm:hidden">{navItem.icon}</span>

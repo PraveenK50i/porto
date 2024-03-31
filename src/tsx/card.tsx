@@ -8,17 +8,17 @@ import Link from "next/link";
 export function ThreeDCard() {
   return (
     <CardContainer className="inter-var">
-      <CardBody className=" bg-gray-500 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-lime-600 dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto h-auto rounded-xl p-6 border  ">
+      <CardBody className="relative group/card  hover:shadow-2xl hover:shadow-lime-600 bg-black border-white/[0.2] w-auto h-auto rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
-          className="text-xl font-bold text-neutral-600 dark:text-white"
+          className="text-xl font-bold text-white"
         >
           Hover Over This card 
         </CardItem>
         <CardItem
           as="p"
           translateZ="60"
-          className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+          className="text-sm max-w-sm mt-2 text-neutral-300"
         >
          it`s cool right (❤️ω❤️)
         </CardItem>
@@ -37,7 +37,7 @@ export function ThreeDCard() {
             as={Link}
             href="https://www.linkedin.com/in/praveen-kumar-3b26ba295/"
             target="__blank"
-            className="px-4 py-2 rounded-xl text-s font-bold dark:text-white"
+            className="px-4 py-2 rounded-xl text-s font-bold text-white"
           >
             Linkedin →
           </CardItem>
@@ -45,7 +45,7 @@ export function ThreeDCard() {
             translateZ={50}
             as={Link}
             href="https://drive.google.com/file/d/14wc6aJiZHIb5S6YE_uf-MmZlNt4ytotP/view?usp=sharing"
-            className="px-4 py-2 rounded-xl bg-transparent dark:bg-white dark:text-black text-white text-s font-bold"
+            className="px-4 py-2 rounded-xl bg-transparent bg-white text-black text-s font-bold"
             target="__blank"
             
           >
@@ -60,17 +60,17 @@ export function ThreeDCard() {
 export function ThreeDCard1() {
   return (
     <CardContainer className="inter-var">
-      <CardBody className=" bg-gray-500 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-red-900 dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto h-auto rounded-xl p-6 border  ">
+      <CardBody className="relative group/card  hover:shadow-2xl hover:shadow-red-900 bg-black border-white/[0.2] w-auto h-auto rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
-          className="text-xl font-bold text-neutral-600 dark:text-white"
+          className="text-xl font-bold text-white"
         >
           Hover Over This card 
         </CardItem>
         <CardItem
           as="p"
           translateZ="60"
-          className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+          className=" text-sm max-w-sm mt-2 text-neutral-300"
         >
            First one! (👉ﾟヮﾟ)👉
         </CardItem>
@@ -89,7 +89,7 @@ export function ThreeDCard1() {
             as={Link}
             href="https://www.linkedin.com/in/praveen-kumar-3b26ba295/"
             target="__blank"
-            className="px-4 py-2 rounded-xl text-s font-bold dark:text-white"
+            className="px-4 py-2 rounded-xl text-s font-bold text-white"
           >
             Discord →
           </CardItem>
@@ -97,7 +97,7 @@ export function ThreeDCard1() {
             translateZ={50}
             as={Link}
             href="https://drive.google.com/file/d/14wc6aJiZHIb5S6YE_uf-MmZlNt4ytotP/view?usp=sharing"
-            className="px-4 py-2 rounded-xl bg-transparent dark:bg-white dark:text-black text-white text-s font-bold"
+            className="px-4 py-2 rounded-xl bg-transparent bg-white text-black text-s font-bold"
             target="__blank"
             
           >
@@ -112,17 +112,17 @@ export function ThreeDCard1() {
 export function ThreeDCard2() {
   return (
     <CardContainer className="inter-var">
-      <CardBody className=" bg-gray-500 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-sky-900 dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto h-auto rounded-xl p-6 border  ">
+      <CardBody className="relative group/card  hover:shadow-2xl hover:shadow-sky-900 bg-black border-white/[0.2] w-auto h-auto rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
-          className="text-xl font-bold text-neutral-600 dark:text-white"
+          className="text-xl font-bold text-white"
         >
           Hover Over This card 
         </CardItem>
         <CardItem
           as="p"
           translateZ="60"
-          className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+          className="text-sm max-w-sm mt-2 text-neutral-300"
         >
           last one! 👈(ﾟヮﾟ👈) 
         </CardItem>
@@ -141,7 +141,7 @@ export function ThreeDCard2() {
             as={Link}
             href="https://www.instagram.com/callmeprawin/"
             target="__blank"
-            className="px-4 py-2 rounded-xl text-s font-bold dark:text-white"
+            className="px-4 py-2 rounded-xl text-s font-bold text-white"
           >
             instagram →
           </CardItem>
@@ -149,7 +149,7 @@ export function ThreeDCard2() {
             translateZ={50}
             as={Link}
             href="https://www.instagram.com/callmeprawin/"
-            className="px-4 py-2 rounded-xl bg-transparent dark:bg-white dark:text-black text-white text-s font-bold"
+            className="px-4 py-2 rounded-xl bg-transparent bg-white text-black text-s font-bold"
             target="__blank"
             
           >

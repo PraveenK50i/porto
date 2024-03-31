@@ -7,7 +7,7 @@ import { Lad } from "@/lib/Contact";
 import ContactPage from "@/pages/Simple";
 export default function Home() {
   return (
-    <main className="h-full w-full dark:bg-black bg-neutral-400  dark:bg-dot-white/[0.2] bg-dot-black/[0.2]">
+    <main className="h-full w-full bg-black  bg-dot-white/[0.2]">
       <div id="home">
         <Hero />
       </div>
