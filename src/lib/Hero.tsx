@@ -37,7 +37,7 @@ export function Hero() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
             delay: 0.3,
-            duration: 6,
+            duration: 3,
             ease: "easeInOut",
           }}
           className="relative flex flex-col gap-0 px-0 items-center justify-center">
