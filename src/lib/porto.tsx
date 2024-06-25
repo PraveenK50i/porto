@@ -81,6 +81,39 @@ export function Porto() {
           }}>
           <li className="relative flex flex-col sm:flex-row  items-start">
             <div className="order-1 sm:ml-6 ">
+              <h3 className="mb-1  font-bold text-slate-200">
+                <span className="mb-1 block text-2xl md:text-4xl font-sans leading-6 text-amber-100">Artcase</span>
+                <span className="mr-2">Html</span>
+                <span className="mr-2">·</span>
+                <span className="mr-2">Css</span>
+                <span className="mr-2">·</span>
+                <span className="mr-2">Website</span>
+              </h3>
+              <div className="text-slate-400">
+                <p>website created to present the work of an artist in digital form by using only Html,Css to make Artcase Site</p>
+              </div><a
+                className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-700 text-slate-100 hover:bg-slate-600 hover:text-white focus:ring-slate-500 mt-6"
+                href="https://saivardhancreations.vercel.app/"
+                target="_blank" // Add this attribute
+                rel="noopener noreferrer">View Work<svg
+                  className="overflow-visible ml-3 text-slate-500 group-hover:text-slate-400"
+                  width="3" height="6" viewBox="0 0 3 6" fill="none" stroke="currentColor" strokeWidth="2"
+                  strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M0 0L3 3L0 6"></path>
+                </svg></a>
+            </div><img src="https://i.postimg.cc/qBG4sqh1/post.jpg" alt="" className="mb-6 shadow-md rounded-xl bg-slate-50 w-full sm:w-[17rem] sm:mb-0 xl:mb-6 xl:w-[20rem] hover:scale-105 transition duration-300 ease-in-out" width="1240" height="640"></img>
+          </li>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0.0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.3,
+            duration: 0.8,
+            ease: "easeInOut",
+          }}>
+          <li className="relative flex flex-col sm:flex-row  items-start">
+            <div className="order-1 sm:ml-6 ">
               <h3 className="mb-1 font-bold text-slate-200">
                 <span className="mb-1 block text-2xl md:text-4xl font-sans leading-6 text-indigo-500">Weather.io</span>
                 <span className="mr-2">Ui/Ux</span>
